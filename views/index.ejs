@@ -1,0 +1,21 @@
+<html>
+    <head>
+    <title></title>
+    <script>
+    </script>
+    </head>
+    <body>
+        <div id = "updateArea">
+            <% for (var x in users) { %>
+                <h3> Name: <%= users[x].name %></h3>
+                <h3> Age: <%= users[x].age %></h3>
+                <hr>
+            <% } %>
+        </div>
+        <form action="/users" method="post">
+            Your name: <input type="text" name="name" id="name"><br>
+            Age: <input type="text" name="age" id="age"><br>
+            <input id="submit" type="Submit" value="Submit">
+          </form>
+    </body>
+</html>
